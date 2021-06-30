@@ -31,6 +31,11 @@ export default {
             name: 'bio',
             type: 'array',
             of: [{ type: 'block' }]
+        },
+        {
+            title: 'Principal',
+            name: 'principal',
+            type: 'boolean'
         }
     ],
     preview: {
