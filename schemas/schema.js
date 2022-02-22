@@ -6,7 +6,6 @@ import schemaTypes from 'all:part:@sanity/base/schema-type'
 import person from './person'
 import igpost from './igpost'
 import gallery from './gallery'
-import galleries from './galleries'
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -17,7 +16,6 @@ export default createSchema({
   types: schemaTypes.concat([
     person,
     igpost,
-    gallery,
-    galleries
+    gallery
   ]),
 })
