@@ -1,3 +1,5 @@
+import imageTypes from "./imageTypes";
+
 export default {
   title: "Gallery",
   name: "gallery",
@@ -14,9 +16,17 @@ export default {
           title: "Image",
           fields: [
             {
+              title: "Texto alternativo",
               name: "alt",
               type: "string",
-              title: "Alternative text",
+            },
+            {
+              title: "Tipo de imagen",
+              name: "imgType",
+              type: "string",
+              options: {
+                list: [...imageTypes],
+              },
             },
           ],
         },
