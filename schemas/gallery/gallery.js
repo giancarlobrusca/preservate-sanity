@@ -6,9 +6,14 @@ export default {
   type: "document",
   fields: [
     {
+      title: "Gallery name",
+      name: "title",
+      type: "string",
+    },
+    {
+      title: "Images",
       name: "images",
       type: "array",
-      title: "Images",
       of: [
         {
           name: "image",
